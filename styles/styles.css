@@ -759,10 +759,11 @@ body {
 
     .one_item {
         min-height: 200px;
-        margin-left: 70px;
+        margin-left: 65px;
     }
 
     .one_item_list li {
+        padding-left: 5px;
         padding-bottom: 10px;
     }
 
@@ -782,10 +783,11 @@ body {
 
     .two_item {
         min-height: 200px;
-        margin-left: 70px;
+        margin-left: 65px;
     }
 
     .two_item_list li {
+        padding-left: 5px;
         padding-bottom: 10px;
         line-height: 1.7rem;
         max-width: 250px;
@@ -982,7 +984,7 @@ body {
         display: flex;
         flex-direction: column;
         background-image: url(./images/mainPage/5.svg);
-        background-size: 60%;
+        background-size: 64%;
         background-repeat: no-repeat;
         gap: 40px;
         padding-left: 7%;
@@ -1000,7 +1002,7 @@ body {
     .one_item_list li {
         padding-left: 5px;
         padding-bottom: 30px;
-        min-width: 120%;
+        min-width: 130%;
         font-size: 28px;
         margin-left: 20%;
     }
@@ -1033,6 +1035,9 @@ body {
         font-size: 28px;
         min-width: 120%;
         margin-left: 35%;
+    }
+    .two_item_list_too_long {
+        line-height: 40px;
     }
     .carousel_left_btn img,
     .carousel_right_btn img {
