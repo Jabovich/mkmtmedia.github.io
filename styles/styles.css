@@ -33,10 +33,15 @@ body {
     width: 100%;
 }
 
+.burger-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 /*Стилизация*/
 .header_container {
     display: flex;
-    background-color: #fff;
 }
 
 .header_name_and_logo {
@@ -663,8 +668,10 @@ body {
 
 @media(max-width: 1280px) and (min-width: 900px) {
     .header_container {
-        margin: 30px;
-        margin-top: 90px;
+        margin: 0px 30px 0 30px;
+/*
+        margin-top:0; */
+        padding-top: 30px;
         justify-content: space-evenly;
     }
 
@@ -686,6 +693,7 @@ body {
         min-width: 600px;
         display: flex;
         justify-content: space-between;
+        align-content: center;
     }
 
     .burger-menu_link {
@@ -714,7 +722,7 @@ body {
     }
 
     .bigPresentation {
-        min-height: 720px;
+        min-height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -886,7 +894,9 @@ body {
 }
 @media(min-width: 1280px){
     .header_container {
-        margin-top: 90px;
+        
+/*        margin-top: 90px;*/
+        padding-top: 30px;
         margin-left: 5%;
         margin-right: 5%;
         gap:10%;
@@ -914,6 +924,8 @@ body {
         min-width: 190%;
         display: flex;
         justify-content: space-between;
+        align-content: center;
+/*        align-items: center;*/
     }
 
     .burger-menu_link {
@@ -942,7 +954,7 @@ body {
         width: 0;
     }
     .bigPresentation {
-        min-height: 850px;
+        min-height: 650px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -951,7 +963,7 @@ body {
     }
 
     .bigPresentation_title {
-        font-size: 600%;
+        font-size: 70px;
         line-height: 1.2em;
     }
 
@@ -983,9 +995,10 @@ body {
     }
 
     .one_item {
-        margin-left: 70px;
+        margin-left: 65px;
     }
     .one_item_list li {
+        padding-left: 5px;
         padding-bottom: 30px;
         min-width: 120%;
         font-size: 28px;
@@ -1011,10 +1024,11 @@ body {
 
     .two_item {
         min-height: 200px;
-        margin-left: 70px;
+        margin-left: 65px;
     }
 
     .two_item_list li {
+        padding-left: 5px;
         padding-bottom: 30px;
         font-size: 28px;
         min-width: 120%;
