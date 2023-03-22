@@ -94,12 +94,23 @@ burgerMenu('.burger-menu');
 
 const contactInfoPopup = document.getElementById('contactInfoPopup')
 contactInfoPopup.addEventListener('show.bs.modal', event => {
-  const button = event.relatedTarget;
-  const recipient = button.getAttribute('data-bs-whatever');
-  const modalTitle = contactInfoPopup.querySelector('.modal-title');
+  const person = event.relatedTarget;
+  const recipient = person.getAttribute('data-bs-name');
+  const room = person.getAttribute('data-bs-room');
+  const email = person.getAttribute('data-bs-email');
+  const phone = person.getAttribute('data-bs-phone');
+  const modalTitle = contactInfoPopup.querySelector('#contactInfoPopupLabel');
+  const modalRoom = contactInfoPopup.querySelector('#contactInfoPopupRoom');
+  const modalEmail = contactInfoPopup.querySelector('#contactInfoPopupEmail');
+  const modalPhone = contactInfoPopup.querySelector('#contactInfoPopupPhone');
+
 
   modalTitle.textContent = recipient;
+  modalRoom.textContent = room;
+  modalEmail.textContent = email;
+  modalPhone.textContent = phone;
 })
+
 function animation() {
     const animItems = document.querySelectorAll('._anim-items')
     if (animItems.length > 0) {
