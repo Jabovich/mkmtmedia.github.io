@@ -71,6 +71,10 @@ body {
     text-align: center;
 }
 
+.card_photo{
+    margin: 15px auto;
+}
+
 .bigPresentation_smallText._active {
     transform: translate(0px, 0px);
     opacity: 1;
@@ -97,6 +101,7 @@ body {
 
 .card {
     background-color: #fff;
+    min-height: 360px;
 }
 
 .slider {
@@ -267,13 +272,14 @@ body {
         border: 3px solid #A689E4;
         border-radius: 9px;
         margin: 20px;
+        min-height: 433px;
     }
 
     .card_photo {
         max-width: 90%;
         background-color: #bbbaba;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        /* margin-top: 15px;
+        margin-bottom: 15px; */
         border-radius: 8px;
     }
 
@@ -466,8 +472,9 @@ body {
     .card_photo {
         max-width: 90%;
         background-color: #bbbaba;
-        margin-top: 10px;
-        margin-bottom: 15px;
+        margin: 10 auto 15 auto;
+        /* margin-top: 10px;
+        margin-bottom: 15px; */
         border-radius: 6px;
     }
 
@@ -818,13 +825,14 @@ body {
         border: 3px solid #A689E4;
         border-radius: 9px;
         margin: 0 10px 0 10px;
+        min-height: 412px;
     }
 
     .card_photo {
         max-width: 90%;
         background-color: #bbbaba;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        /* margin-top: 15px;
+        margin-bottom: 15px; */
         border-radius: 8px;
     }
 
@@ -1065,12 +1073,13 @@ body {
         border: 3px solid #A689E4;
         border-radius: 20px;
         margin: 0 15px 0 15px;
+        min-height: 545px;
     }
 
     .card_photo {
         max-width: 90%;
         background-color: #bbbaba;
-        margin: 20px 30px 20px 30px;
+        margin: 20px auto 20px auto;
         border-radius: 15px;
     }
 
