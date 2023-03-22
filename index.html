@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>МКиМТ ДГТУ</title>
 </head>
@@ -73,7 +74,61 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel">
+            <div class="carousel_preview">
+                <button class="carousel_left_btn arw-left arw"><img src="./styles/images/leftBTN.svg" /></button>
+                <h2 class="carousel_faces">Лица факультета</h2>
+                <button class="carousel_right_btn arw-right arw"><img src="./styles/images/rightBTN.svg" /></button>
+            </div>
+            <!-- <div class="crsl" style="display: flex;"> -->
+            <div class="slider">
+                <div class="slider_line crsl">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#contactInfoPopup" data-bs-whatever="Денис Анатольевич Дубовер">
+                        <img class="card_photo" src="./styles/images/mainPage/SampleUserIcon.png" />
+                        <h3 class="card_name">Денис Анатольевич Дубовер</h3>
+                        <p class="card_position">Декан факультета МКМТ</p>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#contactInfoPopup" data-bs-whatever="Дина Ивановна Ющенко">
+                        <img class="card_photo" src="./styles/images/mainPage/SampleUserIcon.png" />
+                        <h3 class="card_name">Дина Ивановна Ющенко</h3>
+                        <p class="card_position">Зам. декана по учебно-методической работе</p>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#contactInfoPopup" data-bs-whatever="Александр Николаевич Усенко">
+                        <img class="card_photo" src="./styles/images/mainPage/SampleUserIcon.png" />
+                        <h3 class="card_name">Александр Николаевич Усенко</h3>
+                        <p class="card_position">Зам. декана по воспитательной работе </p>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#contactInfoPopup" data-bs-whatever="Оксана Владимировна Тихиня">
+                        <img class="card_photo" src="./styles/images/mainPage/SampleUserIcon.png" />
+                        <h3 class="card_name">Оксана Владимировна Тихиня</h3>
+                        <p class="card_position">Зам. декана по проектной работе </p>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#contactInfoPopup" data-bs-whatever="Елена Викторовна Пасько">
+                        <img class="card_photo" src="./styles/images/mainPage/SampleUserIcon.png" />
+                        <h3 class="card_name">Елена Викторовна Пасько</h3>
+                        <p class="card_position">И.о. заведующей кафедрой «Медиапроизводство»</p>
+                    </div>
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#contactInfoPopup" data-bs-whatever="Максим Игоревич Кадомцев">
+                        <img class="card_photo" src="./styles/images/mainPage/SampleUserIcon.png" />
+                        <h3 class="card_name">Максим Игоревич Кадомцев</h3>
+                        <p class="card_position">И.о. заведующего кафедрой «Медиатехнологии»</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="contactInfoPopup" tabindex="-1" aria-labelledby="contactInfoPopupLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="contactInfoPopupLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <span></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- <div class="carousel">
                 <div class="carousel_preview">
                     <button class="carousel_left_btn"><img src="./styles/images/leftBTN.svg" /></button>
                     <h2 class="carousel_faces">Лица факультета</h2>
@@ -128,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <h2 class="partners_title">Партнеры</h2>
             <div class="partners">
                 <div class="partners_line">
@@ -203,7 +258,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

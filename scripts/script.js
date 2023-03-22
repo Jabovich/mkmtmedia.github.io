@@ -1,3 +1,70 @@
+$(document).ready(function(){
+    $('.crsl').slick({
+      arrows: true,
+      centerMode: true,
+      centerPadding: '0',
+      slidesToShow: 3,
+      prevArrow: document.querySelector('.arw-left'),
+      nextArrow: document.querySelector('.arw-right'),
+      responsive: [
+        {
+            breakpoint: 1600,
+            settings: {
+                centerMode: true,
+                slidesToShow: 3,
+                
+            }
+        },
+        {
+        breakpoint: 1280,
+        settings: {
+            centerMode: true,
+            // centerPadding: '100px 0',
+            slidesToShow: 4,
+            
+        }
+        },
+        {
+        breakpoint: 1024,
+        settings: {
+            centerMode: true,
+            // centerPadding: '40px',
+            slidesToShow: 3,
+            
+        }
+        },
+        {
+        breakpoint: 900,
+        settings: {
+            centerMode: true,
+            // centerPadding: '40px',
+            slidesToShow: 2,
+            
+        }
+        },
+        {
+        breakpoint: 768,
+        settings: {
+            centerMode: true,
+            // centerPadding: '40px',
+            slidesToShow: 2,
+            
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            centerMode: true,
+            // centerPadding: '40px',
+            slidesToShow: 1,
+        }
+        },
+        
+          
+      ]
+    });
+  });
+
 function burgerMenu(selector) {
     let menu = $(selector);
     let button = menu.find('.burger-menu_button', '.burger-menu_lines');
@@ -25,6 +92,14 @@ function burgerMenu(selector) {
 
 burgerMenu('.burger-menu');
 
+const contactInfoPopup = document.getElementById('contactInfoPopup')
+contactInfoPopup.addEventListener('show.bs.modal', event => {
+  const button = event.relatedTarget;
+  const recipient = button.getAttribute('data-bs-whatever');
+  const modalTitle = contactInfoPopup.querySelector('.modal-title');
+
+  modalTitle.textContent = recipient;
+})
 function animation() {
     const animItems = document.querySelectorAll('._anim-items')
     if (animItems.length > 0) {
@@ -60,102 +135,9 @@ function animation() {
     setTimeout(() => {
         anumOnscroll();
     }, 300)
+
 }
 animation();
-
-function slider() {
-    const images = document.querySelectorAll('.slider_line .card');
-    const sliderLine = document.querySelector('.slider_line');
-    let activeSlide = 0;
-    let width;
-
-    function init() {
-        width = document.querySelector('.slider').offsetWidth;
-        sliderLine.style.width = width * images.length + 'px';
-        if (width <= 450) {
-            images.forEach(item => {
-                item.style.width = width + 'px';
-                item.style.height = 'auto';
-            })
-        }
-        else if (width <= 550 && width > 450) {
-            images.forEach(item => {
-                item.style.width = width/1.5 + 'px';
-                item.style.marginRight = 90 + 'px';
-                item.style.marginLeft = 90 + 'px';
-                item.style.height = 'auto';
-            })
-        }
-        else if (width <= 820) {
-            images.forEach(item => {
-                item.style.width = width / 2 - 47 + 'px';
-                item.style.height = 'auto';
-            })
-        }
-        else if (width <= 1280) {
-            images.forEach(item => {
-                item.style.width = width / 3 - 27 + 'px';
-                item.style.height = 'auto';
-            })
-        }
-        else if (width > 1280) {
-            images.forEach(item => {
-                item.style.width = width / 4 - 36 + 'px';
-                item.style.height = 'auto';
-            })
-        }
-        rollSlider();
-    }
-    init()
-    document.querySelector('.carousel_right_btn').addEventListener('click', function () {
-        activeSlide++;
-        if(width <= 550){
-            if (activeSlide >= images.length) activeSlide = 0;
-        }
-        else if(width <= 820){
-            if (activeSlide + 1 >= images.length) activeSlide = 0;
-        }
-        else if(width <= 1280){
-            if (activeSlide + 2 >= images.length) activeSlide = 0;
-        }
-        else if(width > 1280){
-            if (activeSlide + 3 >= images.length) activeSlide = 0;
-        }
-        rollSlider();
-    })
-    document.querySelector('.carousel_left_btn').addEventListener('click', function () {
-        activeSlide--;
-        if(width <= 550){
-            if (activeSlide < 0) activeSlide = images.length - 1;
-        }
-        else if(width <= 820){
-            if (activeSlide - 1 < 0) activeSlide = images.length - 2;
-        }
-        else if(width <= 1280){
-            if (activeSlide - 2 < 0) activeSlide = images.length - 3;
-        }
-        else if(width > 1280){
-            if (activeSlide - 3 < 0) activeSlide = images.length - 4;
-        }
-        rollSlider();
-    })
-    function rollSlider() {
-        if (width <= 550) {
-            sliderLine.style.transform = 'translate(-' + activeSlide * width + 'px)';
-        }
-        else if (width <= 820) {
-            sliderLine.style.transform = 'translate(-' + activeSlide * (width / 2) + 'px)';
-        }
-        else if (width <= 1280) {
-            sliderLine.style.transform = 'translate(-' + activeSlide * (width / 3) + 'px)';
-        }
-        else if (width > 1280) {
-            sliderLine.style.transform = 'translate(-' + activeSlide * (width / 4) + 'px)';
-        }
-    }
-}
-window.addEventListener('resize', slider);
-slider();
 
 function speedLine() {
     width = document.querySelector(".partners_line").offsetWidth;
