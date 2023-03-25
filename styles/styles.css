@@ -63,7 +63,8 @@ body {
 /*Стилизация*/
 .header_container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 .header_name_and_logo {
