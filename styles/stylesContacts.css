@@ -33,6 +33,12 @@ body {
     width: 100%;
 }
 
+.burger-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 /*Стилизация*/
 .header_container {
     display: flex;
@@ -67,6 +73,10 @@ body {
 .sub_more_more li a {
     padding-left: 10px;
     padding-top: 8px;
+}
+
+.facultyInfo{
+    margin-left: 3em;
 }
 
 @media(min-width: 451px) and (max-width: 900px) {
@@ -146,7 +156,7 @@ body {
     .decan_number, .contacts_tel{
         margin-bottom: 20px;
     }
-    .decan_number{
+    .decan_number, .decan_email{
         margin-right: 10px;
     }
     .main_table img{
@@ -286,7 +296,7 @@ body {
     .decan_number, .contacts_tel{
         margin-bottom: 14px;
     }
-    .decan_number{
+    .decan_number, .decan_email{
         margin-right: 10px;
     }
     .person_location{
@@ -493,7 +503,9 @@ body {
         min-width: 600px;
         display: flex;
         justify-content: space-between;
+        align-content: center;
     }
+
 
     .burger-menu_link {
         display: inline-block;
@@ -583,7 +595,7 @@ body {
     .decan_number, .contacts_tel{
         margin-bottom: 20px;
     }
-    .decan_number{
+    .decan_number, .decan_email{
         margin-right: 10px;
     }
     .person_name{
@@ -658,16 +670,18 @@ body {
         line-height: 16px;
     }
 
-    .burger-menu {
+    .burger-menu{
         width: 33%;
         display: flex;
         align-items: center;
     }
-
+    
     .burger-menu_nav {
         min-width: 190%;
         display: flex;
         justify-content: space-between;
+        align-content: center;
+      /*align-items: center;*/
     }
 
     .burger-menu_link {
@@ -754,7 +768,7 @@ body {
     .main_table .block_header{
         margin-top: 100px
     }
-    .decan_number{
+    .decan_number, .decan_email{
         margin-right: 10px;
     }
     .decan_number, .contacts_tel{

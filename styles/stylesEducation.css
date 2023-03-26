@@ -1,0 +1,140 @@
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+    list-style: none;
+}
+
+
+section {
+    /* padding: 100px 0; */
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #292929;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: "OpenSans";
+    color: #292929;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.direction_title {
+    font-size: 61px;
+}
+
+
+
+.my-card {
+    max-width: 381px;
+    height: 506px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 50px;
+}
+
+.card-body {
+    max-width: inherit;
+}
+
+.card-title {
+
+    margin: 35px 0px;
+}
+
+.card-title_2 {
+
+    margin: 35px 0px;
+}
+
+.card-title_3 {
+
+    margin: 35px 20px;
+}
+
+.card-text {}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+.my-btn {
+    grid-area: button;
+    padding: 3px;
+
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: black;
+    border: 2px solid #9079C0;
+    border-radius: 11px;
+}
+
+
+.modal-header {
+    justify-content: center;
+}
+
+.my-modal {
+    border: 5px solid #9079C0;
+    border-radius: 36px;
+}
+
+
+@media(max-width: 568px) {
+    .direction_title {
+        font-size: 52px;
+    }
+}
+
+.section {
+    margin-bottom: 100px;
+
+}
+
+.marg {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.my-li {
+    list-style-type: disc;
+    padding-bottom: 5px;
+}
+
+.my-li_2 {
+    list-style-type: disc;
+    padding-bottom: 3px;
+}
+
+.card-title_2 {
+
+    margin: 20px 0px;
+}
+
+@media(min-width: 1280px){
+    .card my-card {
+        
+    }

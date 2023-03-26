@@ -545,7 +545,11 @@ body {
     }
 
     /*МЕНЮ ДЛЯ ТЕЛЕФОНОВ*/
-
+    /*Отключение подвала*/
+    .footer
+    {
+        display: none;
+    }
 }
 
 @media(max-width: 1280px) and (min-width: 900px) {
@@ -877,6 +881,7 @@ body {
 
     .card_photo {
         width: 980px;
+        height: 550px;
         background-color: #bbbaba;
         margin-top: 15px;
         margin-bottom: 15px;

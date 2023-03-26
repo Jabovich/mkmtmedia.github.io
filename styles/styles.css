@@ -63,8 +63,6 @@ body {
 /*Стилизация*/
 .header_container {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
 }
 
 .header_name_and_logo {
@@ -183,7 +181,6 @@ body {
         max-width: 80%;
         font-size: 16px;
         line-height: 1.2em;
-        max-width: 50%;
     }
 
     .header_name_and_logo {
@@ -694,12 +691,18 @@ body {
     }
 
     /*МЕНЮ ДЛЯ ТЕЛЕФОНОВ*/
-
+    /*Отключение подвала*/
+    .footer
+    {
+        display: none;
+    }
 }
 
 @media(max-width: 1280px) and (min-width: 900px) {
     .header_container {
         margin: 0px 30px 0 30px;
+/*
+        margin-top:0; */
         padding-top: 30px;
         justify-content: space-evenly;
     }
@@ -926,6 +929,8 @@ body {
 }
 @media(min-width: 1280px){
     .header_container {
+        
+/*        margin-top: 90px;*/
         padding-top: 30px;
         margin-left: 5%;
         margin-right: 5%;
@@ -1093,7 +1098,7 @@ body {
         border: 3px solid #A689E4;
         border-radius: 20px;
         margin: 0 15px 0 15px;
-        min-height: 545px;
+        min-height: 560px;
     }
 
     .card_photo {
