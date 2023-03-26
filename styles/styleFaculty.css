@@ -135,7 +135,7 @@ body {
         justify-content: center;
         margin: 50px 0;
     }
-   .video video{
+   .video iframe{
     max-width: 70%;
     border: 2px solid #A081E2;
     border-radius: 4px;
