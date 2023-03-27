@@ -286,7 +286,7 @@ body {
         justify-content: center;
         margin: 50px 0;
     }
-   .video video{
+   .video iframe{
     max-width: 80%;
     border: 2px solid #A081E2;
     border-radius: 4px;
@@ -621,8 +621,8 @@ body {
         justify-content: center;
         margin: 50px 0;
     }
-   .video video{
-    max-width: 80%;
+   .video iframe{
+    max-width: 70%; /*надо починить*/
     border: 2px solid #A081E2;
     border-radius: 4px;
    }
