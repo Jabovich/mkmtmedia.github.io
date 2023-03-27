@@ -287,7 +287,9 @@ body {
         margin: 50px 0;
     }
    .video iframe{
-    max-width: 80%;
+/*    max-width: 80%;*/
+    max-width: 300px;
+    max-height: 170px;
     border: 2px solid #A081E2;
     border-radius: 4px;
    }
@@ -622,7 +624,8 @@ body {
         margin: 50px 0;
     }
    .video iframe{
-    max-width: 70%; /*надо починить*/
+    max-width: 780px;
+    max-height: 450px;
     border: 2px solid #A081E2;
     border-radius: 4px;
    }
