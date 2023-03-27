@@ -807,8 +807,12 @@ body {
         justify-content: center;
         margin: 120px 0 70px 0;
     }
-   .video video{
-    max-width: 68%;
+   .video iframe{
+/*    max-width: 68%;*/
+
+    width: 980px;
+    height: 550px;
+
     border: 2px solid #A081E2;
     border-radius: 12px;
    }

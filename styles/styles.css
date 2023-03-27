@@ -488,6 +488,7 @@ body {
         border: 3px solid #A689E4;
         border-radius: 7px;
         margin: 20px;
+        min-height: 430px;
     }
 
     .card_photo {
