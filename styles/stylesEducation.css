@@ -39,6 +39,10 @@ body {
 
 
 
+.card {
+    width: 381px;
+}
+
 .my-card {
     max-width: 381px;
     height: 480px;
@@ -48,11 +52,18 @@ body {
     margin-bottom: 50px;
 }
 
+@media (max-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
 @media screen and (max-width: 468px) {
     .my-card {}
 
     .card-title_2 {
         font-size: 18px;
+
         font-weight: bold;
     }
 
@@ -75,7 +86,7 @@ body {
 .card-title_2 {
 
 
-
+    font-weight: bold;
     margin: 35px 0px;
 }
 
@@ -90,7 +101,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 24px;
+    bottom: 30px;
     left: 0;
     right: 0;
     margin: 0 auto;
