@@ -43,11 +43,11 @@ body {
         justify-content: center;
         margin: 50px 0;
     }
-   .video video{
+   /* .video video{
     max-width: 70%;
     border: 2px solid #A081E2;
     border-radius: 4px;
-   }
+   } */
    .description{
     font-size: 16px;
     line-height: 18px;
@@ -83,8 +83,9 @@ body {
         margin-right: 20px;
     }
     .videoframe{
-        width: 100vw;
-        height: 70vh;
+        height: 40vw;
+        border: 2px solid #A081E2;
+        border-radius: 12px;
     }
 
 
@@ -165,29 +166,29 @@ body {
         margin: 50px 0;
     }
    .video video{
-    max-width: 80%;
-    border: 2px solid #A081E2;
-    border-radius: 4px;
+        max-width: 80%;
+        border: 2px solid #A081E2;
+        border-radius: 4px;
    }
    .description{
-    max-width: 80%;
-    font-size: 16px;
-    line-height: 18px;
-    margin: 0 25px 0 25px;
+        max-width: 80%;
+        font-size: 16px;
+        line-height: 18px;
+        margin: 0 25px 0 25px;
    }
    .description span{
-    padding-bottom: 25px;
+        padding-bottom: 25px;
    }
    .main_block{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    background-image: url(./images/facultyPage/9.svg);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    max-width: 80%;
-    margin: 100px 25% 150px 10%;
-    min-height: 640px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-image: url(./images/facultyPage/9.svg);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        max-width: 80%;
+        margin: 100px 25% 150px 10%;
+        min-height: 640px;
    }
     .main_block_caption {
         margin-top: 20px;
@@ -205,47 +206,48 @@ body {
         font-size: 20px;
     }
     .videoframe{
-        width: 90vw;
-        height: 75vh;
+        /* width: 90vw; */
+        height: 40vw;
+        border: 2px solid #A081E2;
+        border-radius: 12px;
     }
     
 
 }
 @media(min-width: 1280px){
     .videoframe{
-        width: 90vw;
-        height: 75vh;
+        /* width: 90vw; */
+        height: 32vw;
     }
     .video{
         display: flex;
         justify-content: center;
         margin: 120px 0 70px 0;
     }
-   .video video{
-    max-width: 68%;
-    border: 2px solid #A081E2;
-    border-radius: 12px;
+   .videoframe{
+        /* max-width: 68%; */
+        border: 2px solid #A081E2;
+        border-radius: 12px;
    }
    .description{
-    max-width: 68%;
-    font-size: 22px;
-    line-height: 29px;
-    margin: 0 25px 0 25px;
+        max-width: 68%;
+        font-size: 22px;
+        line-height: 29px;
+        margin: 0 25px 0 25px;
    }
    .description span{
-    padding-bottom: 50px;
+        padding-bottom: 50px;
    }
    .main_block{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    background-image: url(./images/facultyPage/9.svg);
-    background-size: 24%;
-    margin-top: 120px;
-    padding: 0 15% 0 16%;
-    background-repeat: no-repeat;
-    
-    min-height: 680px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-image: url(./images/facultyPage/9.svg);
+        background-size: 24%;
+        margin-top: 120px;
+        padding: 0 15% 0 16%;
+        background-repeat: no-repeat;
+        min-height: 680px;
    }
     .main_block_caption {
         margin-top: 50px;
