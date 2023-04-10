@@ -1,67 +1,32 @@
 $(document).ready(function(){
     $('.crsl').slick({
       arrows: true,
-      centerMode: true,
       centerPadding: '0',
       slidesToShow: 1,
-      variableWidth: true,
+      centerMode: true,
       prevArrow: document.querySelector('.arw-left'),
       nextArrow: document.querySelector('.arw-right'),
       responsive: [
         {
             breakpoint: 1600,
             settings: {
-                centerMode: true,
-                slidesToShow: 1,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                centerPadding: '0',
                 
             }
         },
         {
-        breakpoint: 1280,
-        settings: {
-            centerMode: true,
-            centerPadding: '100px 0',
-            slidesToShow: 1,
-            
-        }
+            breakpoint: 300,
+            settings: {
+                centerPadding: '0',
+                
+            }
         },
-        {
-        breakpoint: 1024,
-        settings: {
-            centerMode: true,
-            // centerPadding: '40px',
-            slidesToShow: 1,
-            
-        }
-        },
-        {
-        breakpoint: 900,
-        settings: {
-            centerMode: true,
-            // centerPadding: '40px',
-            slidesToShow: 1,
-            
-        }
-        },
-        {
-        breakpoint: 768,
-        settings: {
-            centerMode: true,
-            // centerPadding: '40px',
-            slidesToShow: 1,
-            
-        }
-        },
-        {
-        breakpoint: 480,
-        settings: {
-            centerMode: true,
-            // centerPadding: '40px',
-            slidesToShow: 1,
-        }
-        },
-        
-          
+         
       ]
     });
   });

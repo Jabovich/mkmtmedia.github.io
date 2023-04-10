@@ -6,9 +6,10 @@
 }
 
 .card_photo {
-    width: 1200px;
-    height: 700px;
+    width: 69vw;
+    height: 41vw;
     background-color: #bbbaba;
+    margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
     border: 2px solid #A689E4;
@@ -22,7 +23,11 @@
 .card{
     border: 0;
 }
-
+.slider{
+    /* width: 70vw;
+    height: 50vw;
+    align-self: center; */
+}
 .carousel_preview {
     display: flex;
     justify-content: center;
@@ -54,8 +59,8 @@
         font-size: 30px;
     }
     .card_photo {
-        width: 450px;
-        height: 250px;
+        width: 90vw;
+        height: 65vw;
         background-color: #bbbaba;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -74,8 +79,13 @@
 }
 @media(min-width: 601px) and (max-width: 900px) {
     .card_photo {
-        width: 570px;
-        height: 320px;
+        width: 90vw;
+        height: 65vw;
+        background-color: #bbbaba;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+        border: 3px solid #A689E4;
     }
     .card_description {
         margin: 10px 7px 10px 7px;
@@ -108,7 +118,8 @@
     }
 
     .card_photo {
-        max-width: 90%;
+        width: 90vw;
+        height: 65vw;
         background-color: #bbbaba;
         margin-top: 10px;
         margin-bottom: 15px;
@@ -146,8 +157,8 @@
     }
 
     .card_photo {
-        width: 800px;
-        height: 450px;
+        width: 85vw;
+        height: 55vw;
         background-color: #bbbaba;
         margin-top: 15px;
         margin-bottom: 15px;

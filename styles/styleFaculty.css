@@ -34,6 +34,9 @@ body {
 .main_block_item_list li {
     list-style-image: url("./images/listTriangle.svg");
 }
+.decription__paragraph{
+    margin-top: 25px;
+}
 
 
 @media(min-width: 451px) and (max-width: 900px) {
