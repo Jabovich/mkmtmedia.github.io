@@ -224,7 +224,7 @@ body {
         border: 3px solid #A689E4;
         border-radius: 9px;
         margin: 20px;
-        min-height: 433px;
+        min-height: 455px;
     }
 
     .card_photo {
@@ -362,7 +362,7 @@ body {
         border: 3px solid #A689E4;
         border-radius: 7px;
         margin: 20px;
-        min-height: 430px;
+        min-height: 453px;
     }
 
     .card_photo {
@@ -493,7 +493,8 @@ body {
         border: 3px solid #A689E4;
         border-radius: 9px;
         margin: 0 10px 0 10px;
-        min-height: 412px;
+        min-height: 380px;
+/*        412*/
     }
 
     .card_photo {
