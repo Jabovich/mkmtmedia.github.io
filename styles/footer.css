@@ -1,0 +1,215 @@
+.footer {
+    margin-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0 10px;
+}
+
+.footer_header {
+    color: #9079C0;
+}
+
+.footer_sub_more {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sub_more_more {
+    display: none;
+    position: absolute;
+    background-color: #f7d1ff;
+    min-width: 100px;
+    z-index: 1;
+    top: 100%;
+}
+
+.footer_sub_more:hover .sub_more_more {
+    display: block;
+    border-radius: 5px;
+}
+
+.sub_more_more li a {
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+
+@media(min-width: 451px) and (max-width: 900px) {
+    .footer {
+        margin-top: 170px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 50px;
+        padding: 0 10px;
+    }
+
+    .footer_main_sub,
+    .footer_faculty_sub,
+    .footer_education_sub,
+    .footer_portfolio_sub,
+    .footer_contacts_sub {
+        font-size: 17px;
+        padding: 10px 0 10px 0;
+        max-width: 150px;
+        line-height: 1.1em;
+    }
+
+    .footer_main_sub,
+    .footer_faculty_sub {
+        padding-bottom: 10px 0;
+    }
+
+    .footer_main_sub li,
+    .footer_faculty_sub li,
+    .footer_education_sub li,
+    .footer_portfolio_sub li,
+    .footer_contacts_sub li {
+        padding: 5px 0;
+    }
+
+    .footer_portfolio_sub li button {
+        padding-top: 10px;
+    }
+
+    .footer_header {
+        margin-right: 10px;
+        font-size: 22px;
+    }
+}
+@media(max-width: 450px) {
+    .footer {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .footer_main_sub,
+    .footer_faculty_sub,
+    .footer_education_sub,
+    .footer_portfolio_sub,
+    .footer_contacts_sub {
+        font-size: 15px;
+        padding: 10px 0 15px 0;
+    }
+
+    .footer_main_sub,
+    .footer_faculty_sub {
+        padding-bottom: 10px 0;
+    }
+
+    .footer_portfolio {
+        padding-right: 70px;
+    }
+
+    .footer_main_sub li,
+    .footer_faculty_sub li,
+    .footer_education_sub li,
+    .footer_portfolio_sub li,
+    .footer_contacts_sub li {
+        padding: 5px 0;
+    }
+
+    .footer_portfolio_sub li button {
+        padding-top: 10px;
+    }
+
+    .footer_header {
+        margin-right: 10px;
+    }
+}
+@media(max-width: 1280px) and (min-width: 900px) {
+    .footer {
+        margin-top: 170px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 40px;
+        padding: 0 10px;
+    }
+
+    .footer_main_sub,
+    .footer_faculty_sub,
+    .footer_education_sub,
+    .footer_portfolio_sub,
+    .footer_contacts_sub {
+        font-size: 14px;
+        padding: 10px 0 10px 0;
+        max-width: 150px;
+        line-height: 1.1em;
+    }
+
+    .footer_main_sub,
+    .footer_faculty_sub {
+        padding-bottom: 10px 0;
+    }
+
+    .footer_main_sub li,
+    .footer_faculty_sub li,
+    .footer_education_sub li,
+    .footer_portfolio_sub li,
+    .footer_contacts_sub li {
+        padding: 5px 0;
+    }
+
+    .footer_portfolio_sub li button {
+        padding-top: 10px;
+    }
+
+    .footer_header {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+@media(min-width: 1280px){
+    .footer {
+        margin-top: 170px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 10px;
+    }
+
+    .footer_main_sub,
+    .footer_faculty_sub,
+    .footer_education_sub,
+    .footer_portfolio_sub,
+    .footer_contacts_sub {
+        font-size: 22px;
+        padding: 20px 0 60px 0;
+        line-height: 1.1em;
+    }
+
+    .footer_main_sub,
+    .footer_faculty_sub {
+        padding-bottom: 20px 0;
+    }
+
+    .footer_main_sub li,
+    .footer_faculty_sub li,
+    .footer_education_sub li,
+    .footer_portfolio_sub li,
+    .footer_contacts_sub li {
+        padding: 5px 0;
+    }
+
+    .footer_portfolio_sub li button {
+        padding-top: 10px;
+    }
+
+    .footer_header {
+        font-size: 33px;
+    }
+}
+
+@media(max-width: 900px) {
+    /*Отключение подвала*/
+    .footer
+    {
+        display: none;
+    }
+}

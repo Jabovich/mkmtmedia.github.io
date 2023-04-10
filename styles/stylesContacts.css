@@ -22,11 +22,6 @@ body {
     color: #292929;
 }
 
-.wrapper {
-    min-height: 100%;
-    background-image: url("./images/fon.svg");
-}
-
 .header {
     top: 0;
     left: 0;
