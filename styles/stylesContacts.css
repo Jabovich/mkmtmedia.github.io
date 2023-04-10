@@ -109,12 +109,13 @@ body {
     .work_time, .faculty_location, .faculty_tel_num, .faculty_email{
         padding-right: 30px;
     }
-    .faculty_tel_num, .faculty_email, .faculty_vk, .faculty_mainSite, .decan_location, .decan_number, .decan_email, .contacts_tel, .contacts_email{
+    .faculty_tel_num, .faculty_email, .faculty_vk, .faculty_mainSite, .decan_location, .decan_number, .decan_email, .contacts_tel, .contacts_email, .person_location{
         display: flex;
         gap: 10px;
         align-items: center;
+        justify-content: center;
     }
-    .faculty_location, .person_location {
+    .faculty_location{
         display: flex;
         gap: 10px;
         align-items: end;
@@ -241,12 +242,13 @@ body {
     .facultyInfo td{
         padding-bottom: 25px;
     }
-    .faculty_tel_num, .faculty_email, .faculty_vk, .faculty_mainSite, .decan_location, .decan_number, .decan_email, .contacts_tel, .contacts_email{
+    .faculty_tel_num, .faculty_email, .faculty_vk, .faculty_mainSite, .decan_location, .decan_number, .decan_email, .contacts_tel, .contacts_email, .person_location{
         display: flex;
         gap: 8px;
         align-items: center;
+        justify-content: center;
     }
-    .faculty_location, .person_location {
+    .faculty_location{
         display: flex;
         gap: 8px;
         align-items: end;
