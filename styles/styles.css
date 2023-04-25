@@ -22,28 +22,30 @@ body {
     color: #292929;
 }
 
-.modal-body{
+.modal-body {
     display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: center;
 }
 
-.personInfoLink{
+.personInfoLink {
     text-align: center;
     font-weight: 500;
 }
 
-.modal-title{
+.modal-title {
     text-align: center;
     font-weight: 700;
-    padding-left: 20%;
+    /* padding-left: 20%; если подключить, то заголовок встанет криво */
 }
-.cont_icon{
+
+.cont_icon {
     width: 17px;
     margin-right: 7px;
 }
-.cont_element{
+
+.cont_element {
     display: flex;
     justify-content: center;
 }
@@ -71,7 +73,7 @@ body {
     text-align: center;
 }
 
-.card_photo{
+.card_photo {
     margin: 15px auto;
 }
 
@@ -124,7 +126,7 @@ body {
 
 
 @media(min-width: 451px) and (max-width: 900px) {
-    
+
     .bigPresentation {
         min-height: 500px;
         display: flex;
@@ -260,11 +262,11 @@ body {
         margin: 120px 0 30px 0;
     }
 
-    
+
 }
 
 @media(max-width: 450px) {
-    
+
     .bigPresentation {
         min-height: 300px;
         display: flex;
@@ -379,6 +381,7 @@ body {
         margin: 0 7px 10px 7px;
         text-align: center;
     }
+
     .card_position {
         font-size: 14px;
     }
@@ -394,7 +397,7 @@ body {
 }
 
 @media(max-width: 1280px) and (min-width: 900px) {
-    
+
 
     .bigPresentation {
         min-height: 600px;
@@ -467,6 +470,7 @@ body {
         line-height: 1.7rem;
         max-width: 250px;
     }
+
     .carousel_left_btn img,
     .carousel_right_btn img {
         max-width: 70%;
@@ -494,7 +498,7 @@ body {
         border-radius: 9px;
         margin: 0 10px 0 10px;
         min-height: 380px;
-/*        412*/
+        /*        412*/
     }
 
     .card_photo {
@@ -520,6 +524,7 @@ body {
         font-size: 13px;
         color: #292929;
     }
+
     .partner_logo {
         margin: 10px 20px;
     }
@@ -529,10 +534,11 @@ body {
         font-size: 30px;
         margin: 120px 0 30px 0;
     }
-    
+
 }
-@media(min-width: 1280px){
-    
+
+@media(min-width: 1280px) {
+
     .bigPresentation {
         min-height: 650px;
         display: flex;
@@ -551,6 +557,7 @@ body {
         font-size: 160%;
         font-weight: bold;
     }
+
     .main_blocks {
         display: flex;
         justify-content: space-evenly;
@@ -577,6 +584,7 @@ body {
     .one_item {
         margin-left: 65px;
     }
+
     .one_item_list li {
         padding-left: 5px;
         padding-bottom: 30px;
@@ -614,9 +622,11 @@ body {
         min-width: 120%;
         margin-left: 35%;
     }
+
     .two_item_list_too_long {
         line-height: 40px;
     }
+
     .carousel_left_btn img,
     .carousel_right_btn img {
         max-width: 100%;
@@ -669,6 +679,7 @@ body {
         color: #292929;
         padding-bottom: 15px;
     }
+
     .partner_logo {
         margin: 10px 40px;
     }
@@ -678,8 +689,9 @@ body {
         font-size: 360%;
         margin: 280px 0 50px 0;
     }
-    
+
 }
+
 @font-face {
     font-family: "OpenSans";
     src: url("./OpenSans/OpenSans-Regular.ttf") format("truetype");
