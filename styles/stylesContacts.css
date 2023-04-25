@@ -74,6 +74,11 @@ body {
     margin-left: 3em;
 }
 
+
+.faculty_intable td{
+    padding: 1em;
+}
+
 @media(min-width: 451px) and (max-width: 900px) {
     .nameFaculty {
         max-width: 80%;
@@ -592,7 +597,7 @@ body {
     .decan_number, .contacts_tel{
         margin-bottom: 20px;
     }
-    .decan_number, .decan_email{
+    .decan_email{
         margin-right: 10px;
     }
     .person_name{
@@ -657,9 +662,7 @@ body {
         max-width: 20%;
     }
     
-    img {
-        max-width: 9%;
-    }
+
 
     .nameFaculty {
         max-width: 240px;
@@ -756,6 +759,7 @@ body {
     .main_table p{
         width: 350px;
         line-height: 30px;
+        margin-bottom: 0.5rem;
     }
     .main_table td{
         padding-bottom: 60px;
