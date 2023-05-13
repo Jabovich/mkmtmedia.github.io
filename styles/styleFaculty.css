@@ -154,7 +154,7 @@ body {
 
 @media(max-width: 1280px) and (min-width: 900px) {
 
-
+/*откуда тут два main ?*/
     .main_block {
         display: flex;
         flex-direction: column;
@@ -163,6 +163,7 @@ body {
         background-repeat: no-repeat;
         gap: 20px;
     }
+    
     .video{
         display: flex;
         justify-content: center;
