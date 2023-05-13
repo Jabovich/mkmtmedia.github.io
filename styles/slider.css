@@ -1,4 +1,4 @@
-.card {
+.card_ {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
     text-align: center;
     font-size: 24px;
 }
-.card{
+.card_{
     border: 0;
 }
 .slider{
@@ -110,7 +110,7 @@
     .carousel_preview {
         margin-top: 100px;
     }
-    .card {
+    .card_ {
         max-width: 100%;
         display: flex;
         flex-direction: column;
@@ -149,7 +149,7 @@
     .carousel_preview {
         margin-bottom: 40px;
     }
-    .card {
+    .card_ {
         max-width: 100%;
         display: flex;
         flex-direction: column;

@@ -90,8 +90,6 @@ body {
         border: 2px solid #A081E2;
         border-radius: 12px;
     }
-
-
 }
 
 @media(max-width: 450px) {
@@ -169,20 +167,24 @@ body {
         justify-content: center;
         margin: 50px 0;
     }
+    
    .video video{
         max-width: 80%;
         border: 2px solid #A081E2;
         border-radius: 4px;
    }
+    
    .description{
         max-width: 80%;
         font-size: 16px;
         line-height: 18px;
         margin: 0 25px 0 25px;
    }
+    
    .description span{
         padding-bottom: 25px;
    }
+    
    .main_block{
         display: flex;
         flex-direction: column;
