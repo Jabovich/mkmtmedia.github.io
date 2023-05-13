@@ -23,17 +23,24 @@ body {
 }
 
 /*Стилизация*/
+
 .promo{
     display: flex;
-    flex-direction: column;
+/*    flex-direction: column;*/
     align-items: center;
+    justify-content: center;
+    padding-top: 5em; /* вроде неплохо */
+
 }
+
 .description span{
     display: inline-block;
 }
+
 .main_block_item_list li {
     list-style-image: url("./images/listTriangle.svg");
 }
+
 .decription__paragraph{
     margin-top: 25px;
 }
