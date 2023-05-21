@@ -45,7 +45,7 @@ body {
 
 .my-card {
     max-width: 381px;
-    height: 480px;
+/*     height: 480px; */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -75,7 +75,7 @@ body {
 
 .card-body {
     width: inherit;
-    padding: 0rem 1rem;
+    padding: 0rem 2rem; /* вот тут если что ширину сделаль */
 
 }
 
