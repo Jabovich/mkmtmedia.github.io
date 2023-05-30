@@ -6,8 +6,8 @@
 }
 
 .card_photo {
-    width: 69vw;
-    height: 41vw;
+    width: 68vw; /* before 69 */
+    height: 39vw; /* before 41 */
     background-color: #bbbaba;
     margin: auto;
     margin-top: 15px;
